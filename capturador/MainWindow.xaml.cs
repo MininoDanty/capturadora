@@ -24,5 +24,20 @@ namespace capturador
         {
             InitializeComponent();
         }
+
+
+
+        private void btnGrabar_Click(object sender, RoutedEventArgs e)
+        {
+            // Llamar a clase screen
+            Pantalla pt = new Pantalla();
+            List<double> resolucion = pt.resolucion().ToList();
+            texto.Content = resolucion[0] + " x " + resolucion[1];
+
+            imagen.Source = pt.foto();
+
+            pt.guarda();
+
+        }
     }
 }

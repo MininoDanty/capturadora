@@ -1,12 +1,19 @@
-﻿<Window x:Class="capturador.MainWindow"
+﻿<Window x:Name="window" x:Class="capturador.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capturador"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="600" Width="800">
+    <Grid OpacityMask="#FFD41C1C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="221*"/>
+            <ColumnDefinition Width="296*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnGrabar" Content="Grabar" HorizontalAlignment="Right" Margin="0,0,146.205,0" VerticalAlignment="Top" Width="75" Click="btnGrabar_Click"/>
+        <Image x:Name="imagen" HorizontalAlignment="Left" Height="509" Margin="5,36,0,0" VerticalAlignment="Top" Width="777" Grid.ColumnSpan="2"/>
+        <Label x:Name="texto" Content="Label" HorizontalAlignment="Left" Margin="203.795,5,0,0" VerticalAlignment="Top" Height="20" Width="82" FontSize="7" Grid.Column="1"/>
+
     </Grid>
 </Window>

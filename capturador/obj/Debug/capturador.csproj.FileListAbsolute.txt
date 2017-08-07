@@ -1,0 +1,16 @@
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\bin\Debug\capturador.exe.config
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\bin\Debug\capturador.exe
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\bin\Debug\capturador.pdb
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador.csprojResolveAssemblyReference.cache
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\MainWindow.g.cs
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\App.g.cs
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador_MarkupCompile.cache
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador_MarkupCompile.lref
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\MainWindow.baml
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador.g.resources
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador.Properties.Resources.resources
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador.csproj.GenerateResource.Cache
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador.exe
+c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador.pdb
+C:\Users\MiniNo\documents\visual studio 2017\Projects\capturador\capturador\bin\Debug\SharpAvi.dll
+C:\Users\MiniNo\documents\visual studio 2017\Projects\capturador\capturador\bin\Debug\SharpAvi.xml

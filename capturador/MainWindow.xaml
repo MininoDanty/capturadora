@@ -1,12 +1,28 @@
-﻿<Window x:Class="capturador.MainWindow"
+﻿<Window x:Name="window" x:Class="capturador.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capturador"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Gameplays4you" Height="600" Width="800">
+    <Grid OpacityMask="#FFD41C1C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="339*"/>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="278*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnGrabar" Content="Captura de pantalla" HorizontalAlignment="Right" Margin="0,53,201,0" VerticalAlignment="Top" Width="133" Click="btnGrabar_Click" RenderTransformOrigin="0.414,1.75"/>
+        <Image x:Name="imagen" HorizontalAlignment="Left" Height="265" Margin="5,294,0,0" VerticalAlignment="Top" Width="777" Grid.ColumnSpan="4"/>
+        <Label x:Name="texto" Content="Label" HorizontalAlignment="Left" Margin="5,28,0,0" VerticalAlignment="Top" Height="20" Width="82" FontSize="7"/>
+        <Button x:Name="btnGrabar1" Content="Grabar vídeo" HorizontalAlignment="Left" Margin="5,0,0,462" VerticalAlignment="Bottom" Width="91" RenderTransformOrigin="0.559,0.313" Click="btnGrabar1_Click" Height="29"/>
+        <Button x:Name="btnParar" Content="Detener vídeo" HorizontalAlignment="Left" Margin="5,112,0,0" VerticalAlignment="Top" Width="91" Click="btnParar_Click" Height="37"/>
+        <TextBox x:Name="tbCalidad" HorizontalAlignment="Left" Height="23" Margin="219,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="80"/>
+        <Label x:Name="label" Content="Calidad (1-100)" HorizontalAlignment="Left" Margin="123,84,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbFPS" HorizontalAlignment="Left" Height="23" Margin="219,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="15"/>
+        <Label x:Name="label_Copy" Content="FPS (10-30)" HorizontalAlignment="Left" Margin="144,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,-0.269"/>
+        <Label x:Name="lblStatus" Content="Estado: Parado." HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

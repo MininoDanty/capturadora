@@ -7,13 +7,13 @@ using System.Windows;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("capturador")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Capturador")]
+[assembly: AssemblyDescription("Captua de pantalla")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HP Inc.")]
-[assembly: AssemblyProduct("capturador")]
-[assembly: AssemblyCopyright("Copyright © HP Inc. 2017")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("SMR")]
+[assembly: AssemblyProduct("Gameplays4you")]
+[assembly: AssemblyCopyright("Copyright © SMR 2017")]
+[assembly: AssemblyTrademark("Gameplays4you")]
 [assembly: AssemblyCulture("")]
 
 // Si establece ComVisible en false, los tipos de este ensamblado no estarán visibles 

@@ -15,17 +15,32 @@ using System.Runtime.InteropServices;
 
 namespace capturador
 {
+    /*
+     * Clase para realizar captura de pantalla y guardarla 
+     * sMedina 'santiagovalentin88@gmail.com'
+     * V. inicial: 04/08/2017
+     * 
+     * Última edición: 07/08/2017
+     */
+
     class Pantalla 
     {
+        // Resolución de pantalla
         public double ancho, alto;
-        private BitmapSource img;
 
+        // Captura de pantalla
+        private BitmapSource img = null;
+
+
+        // Constructor
         public Pantalla()
         {
             ancho = 0;
             alto = 0;
         }
 
+
+        // Obtener la resolución de la pantalla primaria
         public List<double> resolucion()
         {
             alto = SystemParameters.PrimaryScreenHeight;
@@ -34,6 +49,8 @@ namespace capturador
             return new List<double> { alto, ancho };
         }
 
+
+        // Realizar la captura y devolver un bitmapsource
         public BitmapSource foto()
         {
             // realiza una captura
@@ -57,22 +74,34 @@ namespace capturador
             }
         }
 
-        public void guarda()
+
+        // Convertir la captura en JPEG y guardarla
+        public bool guarda()
         {
             Bitmap bMap;
 
             try
             {
-                using (var fileStream = new FileStream(@"C:\Users\MiniNo\Documents\pruebas\prueba2.jpg", FileMode.Create))
+                // Comprobamos que se realizase una captura
+                if (img != null)
                 {
-                    BitmapEncoder encoder = new PngBitmapEncoder();
-                    encoder.Frames.Add(BitmapFrame.Create(img));
-                    encoder.Save(fileStream);
+                    using (var fileStream = new FileStream(@"C:\Users\MiniNo\Documents\pruebas\prueba2.jpg", FileMode.Create))
+                    {
+                        BitmapEncoder encoder = new PngBitmapEncoder();
+                        encoder.Frames.Add(BitmapFrame.Create(img));
+                        encoder.Save(fileStream);
+
+                        return true;
+                    }
                 }
+                else
+                    return false;
 
             }
             catch (Exception ex)
-            { }
+            {
+                return false;
+            }
         }
 
 

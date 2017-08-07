@@ -12,3 +12,5 @@ c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\
 c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador.csproj.GenerateResource.Cache
 c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador.exe
 c:\users\minino\documents\visual studio 2017\Projects\capturador\capturador\obj\Debug\capturador.pdb
+C:\Users\MiniNo\documents\visual studio 2017\Projects\capturador\capturador\bin\Debug\SharpAvi.dll
+C:\Users\MiniNo\documents\visual studio 2017\Projects\capturador\capturador\bin\Debug\SharpAvi.xml

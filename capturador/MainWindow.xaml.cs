@@ -38,6 +38,39 @@ namespace capturador
 
             pt.guarda();
 
+
+            
+
+        }
+
+        private void btnGrabar1_Click(object sender, RoutedEventArgs e)
+        {
+            string timeStamp =
+                DateTime.Now.Year.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Day.ToString()
+                + "_" + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
+
+            //string filename, int FrameRate, FourCC Encoder, int Quality)
+            aux = new Recorder(new RecorderParams(
+                                                    @"C:\Users\MiniNo\Documents\pruebas\G4u_" + timeStamp + ".avi",
+                                                    Convert.ToInt32(tbFPS.Text),
+                                                    SharpAvi.KnownFourCCs.Codecs.MotionJpeg,
+                                                    //SharpAvi.KnownFourCCs.Codecs.MicrosoftMpeg4V2,
+                                                    Convert.ToInt32(tbCalidad.Text)));
+            //var rec
+            //@"C:\Users\MiniNo\Documents\pruebas\prueba2.jpg"
+            //"out.avi"
+        }
+
+        Recorder aux = null;
+
+        private void btnParar_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            // Finish Writing
+            if (aux != null)
+                aux.Dispose();
+
         }
     }
 }
